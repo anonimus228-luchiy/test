@@ -1,18 +1,16 @@
-import logging
+from aiogram import executor
 from aiogram import Bot, Dispatcher
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.utils import executor
 from config import TOKEN
-from handlers.commands import register_handlers
-from db.main_db import setup_db
+from handlers.product import register_product_handlers
+from handlers.order import register_order_handlers
+from handlers.commands import register_common_handlers
 
-logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
-storage = MemoryStorage()
-dp = Dispatcher(bot, storage=storage)
+dp = Dispatcher(bot)
 
-register_handlers(dp)
+register_common_handlers(dp)
+register_product_handlers(dp)
+register_order_handlers(dp)
 
 if __name__ == "__main__":
-    setup_db()
     executor.start_polling(dp, skip_updates=True)
