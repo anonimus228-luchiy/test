@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/db/main_db.py;C:/Users/user/PycharmProjects/pythonProject6/db/queries.py;C:/Users/user/PycharmProjects/pythonProject6/handlers/__init__.py;C:/Users/user/PycharmProjects/pythonProject6/handlers/commands.py;C:/Users/user/PycharmProjects/pythonProject6/handlers/fsm_reg.py;C:/Users/user/PycharmProjects/pythonProject6/config.py;C:/Users/user/PycharmProjects/pythonProject6/main.py" />
+  </component>
+</project>
