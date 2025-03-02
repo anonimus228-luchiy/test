@@ -35,4 +35,4 @@ def add_order(article, size, quantity, contact):
 
     order_details = f"Артикул: {article}, Размер: {size}, Количество: {quantity}, Контакт: {contact}"
 
-    asyncio.create_task(notify_staff(order_details))  # Запускаем асинхронное уведомление сотрудников
+    asyncio.create_task(notify_staff(order_details))
